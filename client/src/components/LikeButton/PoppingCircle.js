@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   height: ${p => p.size};
   border-radius: 50%;
 
-  animation: ${Pop} 300ms, ${TurnPurple} 800ms forwards;
+  animation: ${Pop} 300ms forwards, ${TurnPurple} 800ms forwards;
 `;
 
 export default PoppingCircle;
