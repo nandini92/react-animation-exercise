@@ -14,7 +14,8 @@ const Tweet = () => {
     tweetContents,
     isRetweetedByCurrentUser,
     isLikedByCurrentUser,
-    date
+    date,
+    actions: {handleToggleLike, handleToggleReTweet}
   }  = useContext(TweetContext);
 
   return (
@@ -32,6 +33,8 @@ const Tweet = () => {
       <ActionBar
         isRetweetedByCurrentUser={isRetweetedByCurrentUser}
         isLikedByCurrentUser={isLikedByCurrentUser}
+        handleToggleLike={handleToggleLike}
+        handleToggleReTweet={handleToggleReTweet}
       />
       <Divider />
     </Wrapper>
