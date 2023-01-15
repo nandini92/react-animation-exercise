@@ -13,6 +13,7 @@ const Tweet = () => {
     tweetContents,
     isRetweetedByCurrentUser,
     isLikedByCurrentUser,
+    date
   }  = useContext(TweetContext);
 
   return (
@@ -23,6 +24,7 @@ const Tweet = () => {
         avatarSrc={avatarSrc}
       />
       <TweetContents>{tweetContents}</TweetContents>
+      <Timestamp>{date}</Timestamp>
       <Divider />
       <ActionBar
         isRetweetedByCurrentUser={isRetweetedByCurrentUser}
@@ -54,6 +56,7 @@ const Timestamp = styled.div`
 `;
 
 const Divider = styled.div`
+
   height: 1px;
   background: rgb(230, 236, 240);
 `;
