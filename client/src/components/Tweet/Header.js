@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import avatar from "../../assets/carmen-sandiego.png";
 
-const Header = ({ displayName, username, avatarSrc }) => {
+const Header = ({ displayName, username }) => {
   return (
     <Wrapper>
-      <Avatar src={avatarSrc} />
+      <Avatar src={avatar} />
       <Name>
         <DisplayName>{displayName}</DisplayName>
         <Username>@{username}</Username>
